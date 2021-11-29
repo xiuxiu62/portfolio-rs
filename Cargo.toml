@@ -1,0 +1,14 @@
+[package]
+name = "portfolio"
+version = "0.1.0"
+edition = "2021"
+
+[[bin]]
+name = "portfolio"
+path = "src/main.rs"
+
+[dependencies]
+serde = { version = "1.0.130", features = ["derive"] }
+thiserror = "1.0.30"
+tokio = { version = "1", features = ["full"] }
+warp = "0.3.2"
